@@ -6,7 +6,11 @@ vaadin2angular
 public void GetVaadinAppAndStuff(){
   // a bunch of java code, i have no idea
   // mmm....
-  VaadinApp.toJSON() // <- your angular app comes out here,  I  think
+  try {
+      VaadinApp.toAngular(); // <- your angular app comes out here,  I  think
+  } catch (WhatWereYouThinkingException e) {
+      System.exit(0);
+  }    
 }
 ```
 
